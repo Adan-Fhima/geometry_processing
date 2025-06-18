@@ -92,7 +92,7 @@ void save_frame(const std::vector<Polygon>& cells, const std::vector<Particle>& 
                 }
 
                 if (isInside) {
-                    if (static_cast<size_t>(i) < particles.size() && particles[i].type == FLUID) {
+                    if (i < particles.size() && particles[i].type == FLUID) {
                         image[((H - y - 1) * W + x) * 3] = 0;
                         image[((H - y - 1) * W + x) * 3 + 1] = 0;
                         image[((H - y - 1) * W + x) * 3 + 2] = 255;
