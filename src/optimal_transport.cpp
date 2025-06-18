@@ -33,7 +33,7 @@ static lbfgsfloatval_t evaluate(void* instance, const lbfgsfloatval_t* w, lbfgsf
     return -res;
 }
 
-//both progress and optimize were done with the helped of LLMs 
+//both progress and optimize function were done with the helped of LLMs 
 static int progress(void* instance, const lbfgsfloatval_t* x, const lbfgsfloatval_t* g, const lbfgsfloatval_t fx,
                     const lbfgsfloatval_t xnorm, const lbfgsfloatval_t gnorm, const lbfgsfloatval_t step, int n, int k, int ls) {
     return 0; 
